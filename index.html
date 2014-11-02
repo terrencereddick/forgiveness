@@ -1,0 +1,233 @@
+
+<!DOCTYPE HTML>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Forgive for Health, SMIL inline Timesheets, HTML text, vorbis/mp3 and jpg example</title>
+  
+
+<style type="text/css">
+
+
+body { 
+text-align: center;
+}
+
+ 
+div {
+width: 1100px;
+height: 619px;
+top: 0.0em;
+left: 0.0em;
+color:black;
+}
+
+
+
+.jtextfill {
+text-align:left;
+position:absolute;
+padding-left: 1.1em ;
+padding-right: 1.1em ;
+left:390px;
+top:280px;
+width:615px;
+height:300px;
+z-index: 6;
+color: #0000ff;
+}
+
+.jtextfill2 {
+text-align:left;
+position:absolute;
+padding-left: 1.1em ;
+padding-right: 1.1em ;
+left:84px;
+top:300px;
+width:968px;
+height:300px;
+z-index: 6;
+color: #ffff00;
+
+}
+
+.jtextfill3 {
+text-align:left;
+position:absolute;
+padding-left: 1.1em ;
+padding-right: 1.1em ;
+left:86px;
+top:210px;
+width:903px;
+height:265px;
+z-index: 6;
+color: #ffff00;
+
+}
+
+.jtextfill4 {
+text-align:left;
+position:absolute;
+padding-left: 1.1em ;
+padding-right: 1.1em ;
+left:70px;
+top:162px;
+width:600px;
+height:300px;
+z-index: 6;
+color: #ffff00;
+
+}
+
+.jtextfill5 {
+text-align:left;
+position:absolute;
+padding-left: 1.1em ;
+padding-right: 1.1em ;
+left:25px;
+top:70px;
+width:765px;
+height:450px;
+z-index: 6;
+color: #0000ff;
+}
+
+.jtextfill9 {
+text-align:right;
+position:absolute;
+padding-left: 1.1em ;
+padding-right: 1.1em ;
+left:840px;
+top:498px;
+width:180px;
+height:60px;
+z-index: 6;
+color: #0000ff;
+}
+
+
+
+img {
+position: absolute;
+top: 0.0em;
+left: 0.0em;
+transition         : all 1s;
+-o-transition      : all 1s;
+-moz-transition    : all 1s;
+-webkit-transition : all 1s;
+z-index:-1;
+}
+
+/* cross-fade effect */
+.crossfade  img { 
+opacity: 0;
+}
+
+.crossfade img[smil=active] { 
+opacity: 1;
+}
+
+
+
+</style>
+
+<script type="text/javascript" src="jquery-1.10.2.min.js" ></script>
+<script type="text/javascript" src="jquery-t.js" ></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+   $('.jtextfill,.jtextfill2,.jtextfill3,.jtextfill4,.jtextfill5,.jtextfill9').textfill({ maxFontPixels: 70 });
+   $('#dyntext').keyup(function() {
+     $('.dyntextval').html(this.value);
+     $('.jtextfill,.jtextfill2,.jtextfill3,.jtextfill4,.jtextfill5,.jtextfill9').textfill({ maxFontPixels: 70 });
+     });
+   });
+
+	
+</script>
+
+<script type="text/javascript" src="timesheets.js">
+</script>
+
+</head>
+
+<body class="crossfade">
+ 
+<div id="compost" mediaSync="#music" timeContainer="par" >
+ 
+
+
+<audio id="music" autoplay="autoplay"  preload="auto"   
+alt="Javolenus_-_C112-LaidBackSongChords.mp3 from http://ccmixter.org/people/Javolenus"  >
+<source src="media/Javolenus_-_C112-LaidBackSongChords_3c.ogg" type="audio/ogg" />
+<source src="media/Javolenus_-_C112-LaidBackSongChords_3c.mp3" type="audio/mpeg" />
+Your browser does not support the HTML5 audio element
+</audio>   
+
+
+<img begin="01.00s" dur="08.00s" src="media/4127967675_db5b064706_o_1.jpg" 
+alt="Wounded image from flickr.com/photos/starlights_/4127967675/" />
+
+<p id="p_1" class="jtextfill" begin="01.00s" dur="08.00s" timeAction="display" >
+<span class="dyntextval" > 
+"Every person on the planet is wounded at one time or another" 
+Dr. Robert D. Enright
+</span>
+</p>
+
+
+
+<img  begin="10.00s" dur="09.00s" src="media/5379840646_b6f2fb5be5_o_1.jpg" 
+alt="Hurt image from flickr.com/photos/28802358@N05/5379840646/" />    
+
+<p id="p_2" class="jtextfill2" begin="10.00s" dur="09.00s" timeAction="display" >
+<span class="dyntextval" > 
+Hurt people hurt others
+</span>
+</p>
+
+
+<img  begin="20.00s" dur="08.00s" src="media/5723808679_69ea5fb106_o_1.jpg" 
+alt="Kicsengetési kép K.Anitának image from flickr.com/photos/kjcs/5723808679/" />    
+
+<p id="p_3" class="jtextfill3" begin="20.00s" dur="08.00s" timeAction="display" >
+<span class="dyntextval" > 
+Forgiveness ends the cycle
+
+</span>
+</p>
+
+
+<img begin="29.00s" dur="08.00s" src="media/7721993052_6ae5eb7e43_o_1.jpg" 
+alt="Ten Mile Run image from flickr.com/photos/puuikibeach/7721993052/" />
+
+<p id="p_4" class="jtextfill4" begin="29.00s" dur="08.00s" timeAction="display" >
+<span class="dyntextval" > 
+Live a happier and healthier life
+</span>
+</p>
+
+
+<img begin="38.00s" dur="indefinite" src="media/4625806430_c09506518d_o_1.jpg" 
+alt="Life as an Island image from flickr.com/photos/mystandardbreakfromlife/4625806430/" />
+<p id="p_5" class="jtextfill5" begin="38.00s" dur="indefinite" timeAction="display" >
+<span class="dyntextval" > 
+"...a major paradox of
+forgiveness: As you reach out to others in love, you yourself experience emotional healing."
+<br/><br/>Dr. Robert D. Enright 
+</span>
+</p>
+
+
+</p>
+<p id="p_9" class="jtextfill9" begin="38.00s" dur="indefinite" timeAction="display" >
+<span class="dyntextval" > 
+<a href="forgive-for-health_credits.html" title="Credits" target="_blank" >
+Credits
+</a>
+</span>
+</p>
+
+
+</div>
+</body>
+</html>
