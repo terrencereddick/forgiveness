@@ -17,6 +17,4 @@
   <author href="https://build.phonegap.com" email="support@phonegap.com">
       Hardeep Shoker
   </author>
-
-  <preference name="phonegap-version" value="6.5.0" />
 </widget>
